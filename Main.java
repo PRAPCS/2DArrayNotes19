@@ -24,15 +24,16 @@ class Main {
     }
 
   }
-  System.out.println(abc[5][8]);
+  System.out.println(abc[5][8]); //Returns the value in row 5, column 8
   for(int r=0; r<abc.length;r++){
     for(int c = 0; c<abc.length; c++){
-      if(c==4)
+      if(c==4)//Sums all values in column 4
       sum+=abc[r][c];
     }
   }  
   System.out.println("The sum of column 5 is: "+sum);
   
+  //Traverse an non square matrix - xyz.length returns number of rows, xyz[0].length returns number of colums in that row
   for(int r=0; r<xyz.length;r++){
     for(int c = 0; c<xyz[0].length; c++){
       System.out.print(xyz[r][c]+"\t");
