@@ -1,7 +1,7 @@
 class Main {
   public static void main(String[] args) {
   
-  //Creates a 2D array with [rows][columns]
+  //Creates a 2D array with [rows][columns] automatically fills them with all 0's by default
   int [][] abc = new int[13][13];
   int sum=0;
   //Creates and fills the 2D array
@@ -11,7 +11,7 @@ class Main {
     {11,12,1,3,5}
   };
 
-
+//loop through all the rows and columns
   for(int r = 0; r<abc.length;r++)
   {
     for(int c = 0; c<abc.length; c++)
