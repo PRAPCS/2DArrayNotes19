@@ -4,6 +4,7 @@ class Main {
   //Creates a 2D array with [rows][columns] automatically fills them with all 0's by default
   int [][] abc = new int[13][13];
   int sum=0;
+  int sum2=0;
   //Creates and fills the 2D array
   int[][] xyz = {
     {1,2,3,4,5},
@@ -31,7 +32,12 @@ class Main {
       sum+=abc[r][c];
     }
   }  
+  //Another way to sum just a column
+  for(int r=0; r<abc.length;r++){
+    sum2+=abc[r][4];
+  }
   System.out.println("The sum of column 5 is: "+sum);
+  System.out.println("The sum of column 5 is: "+sum2);
   
   //Traverse an non square matrix - xyz.length returns number of rows, xyz[0].length returns number of colums in that row
   for(int r=0; r<xyz.length;r++){
