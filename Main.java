@@ -26,12 +26,16 @@ class Main {
 
   }
   System.out.println(abc[5][8]); //Returns the value in row 5, column 8
+  int max = abc[0][0];
   for(int r=0; r<abc.length;r++){
     for(int c = 0; c<abc.length; c++){
       if(c==4)//Sums all values in column 4
       sum+=abc[r][c];
+      if(abc[r][c]>max)//look for a max value in the matrix
+      max = abc[r][c];
     }
-  }  
+  } 
+  System.out.println("===The max value is ============"+max); 
   //Another way to sum just a column
   for(int r=0; r<abc.length;r++){
     sum2+=abc[r][4];
